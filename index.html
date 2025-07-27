@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partenope Pizzeria - Auténtica Pizza Italiana</title>
+    <meta name="description"
+        content="Auténtica experiencia italiana en cada bocado. Desde 1985, llevamos la tradición napolitana directa a tu mesa con ingredientes frescos y recetas familiares.">
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Dancing+Script:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navigation" class="navigation">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <div class="logo-img">
+                        <img src="img/2.jpeg">
+                    </div>
+                </div>
+
+                <div class="mobile-menu-toggle">
+                    <button id="mobile-menu-btn" class="mobile-btn" onclick="toggleMobileMenu()">
+                        <i data-lucide="menu"></i>
+                    </button>
+                </div>
+
+                <div class="nav-menu desktop-menu">
+                    <button class="nav-link" onclick="scrollToSection('inicio')">Inicio</button>
+                    <button class="nav-link" onclick="scrollToSection('menu')">Menú</button>
+                    <button class="nav-link" onclick="scrollToSection('nosotros')">Nuestra historia</button>
+                    <button class="nav-link" onclick="scrollToSection('contacto')">Contacto</button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <div class="mobile-menu-content">
+                <button class="mobile-nav-link" onclick="scrollToSection('inicio')">Inicio</button>
+                <button class="mobile-nav-link" onclick="scrollToSection('menu')">Menú</button>
+                <button class="mobile-nav-link" onclick="scrollToSection('nosotros')">Nosotros</button>
+                <button class="mobile-nav-link" onclick="scrollToSection('contacto')">Contacto</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <video autoplay muted loop playsinline class="background-video">
+            <source src="video/1.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Bienvenidos a<br />
+                <span class="hero-subtitle">Partenope Pizzeria</span>
+            </h1>
+            <p class="hero-description">
+                La auténtica pizza napolitana con sabor original, directo al corazón de Mataró.
+            </p>
+            <p class="hero-description">
+                <strong>Dos amigos, una pasión:</strong> <br>
+                <strong>Parténope</strong> no es solo un nombre: es nuestra promesa de autenticidad, dedicación y sabor
+                napolitano en cada visita.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('menu')">Ver Menú</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('contacto')">Más Información</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestro Menú</h2>
+                <p class="section-description">
+                    Descubre nuestras pizzas artesanales preparadas con ingredientes frescos importados directamente de
+                    Italia
+                </p>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Pizzas Tradicionales -->
+                <div class="menu-card">
+                    <h3 class="menu-card-title">Pizzas Tradicionales</h3>
+                    <div id="pizzas-tradicionales" class="menu-items">
+                        <!-- Items will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Pizzas Especiales -->
+                <div class="menu-card">
+                    <h3 class="menu-card-title">Pizzas Especiales</h3>
+                    <div id="pizzas-especiales" class="menu-items">
+                        <!-- Items will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Pizzas de la Casa -->
+                <div class="menu-card">
+                    <h3 class="menu-card-title">Pizzas de la Casa</h3>
+                    <div id="pizzas-de-la-casa" class="menu-items">
+                        <!-- Items will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Ensalada -->
+                <div class="menu-card">
+                    <h3 class="menu-card-title">Ensaladas</h3>
+                    <div id="ensalada" class="menu-items">
+                        <!-- Items will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Postres -->
+                <div class="menu-card">
+                    <h3 class="menu-card-title">Postres</h3>
+                    <div id="postres" class="menu-items">
+                        <!-- Items will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Bebidas -->
+                <div class="menu-card">
+                    <h3 class="menu-card-title">Bebidas</h3>
+                    <div id="bebidas" class="menu-items">
+                        <!-- Items will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Vinos -->
+                <div class="menu-card">
+                    <h3 class="menu-card-title">Vinos Copa / Botella</h3>
+                    <div id="vinos" class="menu-items">
+                        <!-- Items will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Café -->
+                <div class="menu-card">
+                    <h3 class="menu-card-title">Café</h3>
+                    <div id="cafe" class="menu-items">
+                        <!-- Items will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Cervezas -->
+                <div class="menu-card">
+                    <h3 class="menu-card-title">Cervezas Copa / Jarra</h3>
+                    <div id="cervezas" class="menu-items">
+                        <!-- Items will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="section-title">Nuestra Historia</h2>
+                    <p class="about-main-text">
+                        <span class="brand-highlight">Partenope Pizzeria</span><br>
+                        Nace de una leyenda napoletana y de la pasión de Antonio Picariello y Antonio Maisto por la
+                        pizza auténtica. En Mataró, traemos la verdadera tradición napolitana: masas artesanales
+                        fermentadas con paciencia, ingredientes de alta calidad. <br><br>
+                        Creemos firmemente que la tradición no debe perderse, y por eso cuidamos cada detalle: desde la
+                        técnica hasta el trato cercano, desde la cocción en horno hasta el aroma que llena nuestro
+                        local. <br><br>
+                        Te invitamos a sumergirte en esta experiencia, a saborear una pizza como se hace en Nápoles...
+                        pero en el corazón de Mataró. Bienvenido a Parténope. Aquí, la tradición se sirve en cada
+                        porción.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=1000"
+                        alt="Pizza chef working with dough" class="about-img">
+                    <div class="about-img-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contacto</h2>
+                <p class="section-description">¡Ven a visitarnos!</p>
+            </div>
+
+            <div class="contact-info-center">
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 class="contact-item-title">Dirección</h4>
+                            <p class="contact-item-text">Camí Ral de la Mercè, 510, 08302 Mataró, Barcelona</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 class="contact-item-title">Teléfono</h4>
+                            <p class="contact-item-text">+34 91 123 45 67</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="mail"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 class="contact-item-title">Email</h4>
+                            <p class="contact-item-text">info@partenopepizzeria.es</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 class="contact-item-title">Horarios</h4>
+                            <p class="contact-item-text">
+                                Lunes - Jueves: 12:00 - 23:00<br />
+                                Viernes - Sábado: 12:00 - 24:00<br />
+                                Domingo: 12:00 - 22:00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <h4 class="social-title">Reservas y pedidos:</h4>
+                    <div class="social-links">
+                        <a href="https://wa.me/34633748225" target="_blank" class="social-link">
+                            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"
+                                width="30px">
+                        </a>
+                    </div><br>
+                    <h4 class="social-title">Síguenos</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/partenopepizzeriamataro" target="_blank" class="social-link">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"
+                                width="30px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <section id="ubicacion">
+                <div class="wrapper">
+                    <h2>¿Dónde nos encuentras?</h2>
+                    <p>Estamos ubicados en <strong>Camí Ral de la Mercè, 510, 08302 Mataró, Barcelona</strong>. <br>
+                        ¡Te esperamos con los brazos abiertos y el irresistible aroma de la pizza napolitana
+                    </p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2986.5796939851075!2d2.4386841758865705!3d41.535044171281655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4b5c3f1818121%3A0xcea618aefb6b2311!2sPartenope%20Pizzeria!5e0!3m2!1ses-419!2ses!4v1753373524095!5m2!1ses-419!2ses"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 class="footer-brand">Partenope Pizzeria</h3>
+                    <p class="footer-description">
+                        La auténtica pizza napolitana, directo al corazón de Mataró.
+                    </p>
+
+                    <div class="footer-social">
+                        <div class="social-links">
+                            <a href="https://wa.me/34633748225" target="_blank" class="social-link">
+                                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"
+                                    width="30px">
+                            </a>
+                            <a href="https://www.instagram.com/partenopepizzeriamataro" target="_blank"
+                                class="social-link">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"
+                                    width="30px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Contacto</h4>
+                    <div class="footer-contact">
+                        <p class="footer-contact-item">
+                            <i data-lucide="map-pin"></i>
+                            Camí Ral de la Mercè, 510, 08302 Mataró, Barcelona
+                        </p>
+                        <p class="footer-contact-item">
+                            <i data-lucide="phone"></i>
+                            +34 91 123 45 67
+                        </p>
+                        <p class="footer-contact-item">
+                            <i data-lucide="mail"></i>
+                            info@partenopepizzeria.es
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; 2025 Partenope Pizzeria. Todos los derechos reservados. | Diseñado con ❤️ y mucha pizza
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
