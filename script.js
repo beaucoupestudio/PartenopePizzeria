@@ -329,6 +329,7 @@ function scrollToSection(sectionId) {
 }
 
 function toggleMobileMenu() {
+
     const mobileMenu = document.getElementById('mobile-menu');
     const menuBtn = document.getElementById('mobile-menu-btn');
     
@@ -432,15 +433,23 @@ function createMenuItem(pizza) {
 
 // Smooth scrolling for navigation
 window.addEventListener('scroll', function() {
-    const navigation = document.getElementById('navigation');
-    if (window.scrollY > 100) {
-        navigation.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
-        navigation.style.backdropFilter = 'blur(10px)';
-    } else {
-        navigation.style.backgroundColor = 'var(--white)';
-        navigation.style.backdropFilter = 'none';
-    }
+    const navigation = document.querySelector('.nav-container');
+
+    var alpha = Math.min((window.scrollY / 100), 1.0);
+    navigation.style.backgroundColor = `rgba(var(--header-background), ${alpha})`;
+
 });
+
+// window.addEventListener('scroll', function() {
+//     const navigation = document.getElementById('navigation');
+//     if (window.scrollY > 100) {
+//         navigation.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+//         navigation.style.backdropFilter = 'blur(10px)';
+//     } else {
+//         navigation.style.backgroundColor = 'var(--white)';
+//         navigation.style.backdropFilter = 'none';
+//     }
+// });
 
 // Handle window resize for mobile menu
 window.addEventListener('resize', function() {
@@ -449,17 +458,17 @@ window.addEventListener('resize', function() {
     }
 });
 
-// Close mobile menu when clicking outside
-document.addEventListener('click', function(event) {
-    const mobileMenu = document.getElementById('mobile-menu');
-    const menuToggle = document.getElementById('mobile-menu-btn');
+// Close mobile menu when clicking outside keviniiiiii<-------> quitar el codigo
+// document.addEventListener('click', function(event) {
+//     const mobileMenu = document.getElementById('mobile-menu');
+//     const menuToggle = document.getElementById('mobile-menu-btn');
     
-    if (isMobileMenuOpen && 
-        !mobileMenu.contains(event.target) && 
-        !menuToggle.contains(event.target)) {
-        toggleMobileMenu();
-    }
-});
+//     if (isMobileMenuOpen && 
+//         !mobileMenu.contains(event.target) && 
+//         !menuToggle.contains(event.target)) {
+//         toggleMobileMenu();
+//     }
+// });
 
 // Intersection Observer for animations (optional enhancement)
 function initializeScrollAnimations() {
@@ -493,48 +502,6 @@ const langMenu = document.getElementById("langMenu");
 const selectedLangBtn = document.getElementById("selectedLangBtn");
 const langOptions = document.getElementById("langOptions");
 
-
-
-// ...existing code...
-
-/*const translations = {
-  es: {
-    'hero-title': 'Bienvenidos a<br /><span class="hero-subtitle">Partenope Pizzeria</span>',
-    'hero-description': 'La auténtica pizza napolitana, directo al corazón de Mataró.',
-    // Añade aquí todos los IDs y textos en español
-  },
-  ca: {
-    'hero-title': 'Benvinguts a<br /><span class="hero-subtitle">Partenope Pizzeria</span>',
-    'hero-description': "L'autèntica pizza napolitana, al cor de Mataró.",
-    // Traducciones al catalán
-  },
-  en: {
-    'hero-title': 'Welcome to<br /><span class="hero-subtitle">Partenope Pizzeria</span>',
-    'hero-description': 'Authentic Neapolitan pizza, right in the heart of Mataró.',
-    // Traducciones al inglés
-  },
-  it: {
-    'hero-title': 'Benvenuti a<br /><span class="hero-subtitle">Partenope Pizzeria</span>',
-    'hero-description': 'La vera pizza napoletana, nel cuore di Mataró.',
-    // Traducciones al italiano
-  }
-};
-
-function changeLanguage(lang) {
-  for (const id in translations[lang]) {
-    const el = document.getElementById(id);
-    if (el) el.innerHTML = translations[lang][id];
-  }
-}
-
-// Opcional: Detectar idioma del navegador al cargar
-window.onload = function() {
-  const userLang = navigator.language.slice(0,2);
-  if (['es','ca','en','it'].includes(userLang)) {
-    document.getElementById('language-select').value = null;
-    changeLanguage(userLang);
-  }
-};*/
 
 
 

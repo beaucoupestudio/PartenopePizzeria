@@ -1,9 +1,10 @@
 /* CSS Variables */
 :root {
-  --italian-red: hsl(0, 100%, 27.3%);
+  --header-background : 205, 33, 42;
+  --italian-red: #CD212A;
   --italian-green: hsl(138, 30.6%, 19.6%);
   --italian-gold: hsl(51, 100%, 50%);
-  --cream: hsl(43, 33.3%, 96.5%);
+  --cream: hsl(43, 33.3%, 96.5%); 
   --warm-orange: hsl(12, 100%, 64.3%);
   --dark-green: hsl(145, 47.8%, 19.4%);
   --white: hsl(0, 0%, 100%);
@@ -64,9 +65,13 @@ body {
 }
 
 .nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  
+      position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    background: transparent;
 }
 
 .nav-content {
@@ -74,16 +79,19 @@ body {
   justify-content: space-between; /* Espacio entre elementos */
   align-items: center;
   height: 90px;
+      max-width: 1000px;
+    margin: 0 auto;
 }
 
 .logo-img img {
   margin: 0;
-  padding: 0.5rem 0;
+  padding: 14.5px;
   font-size: 2rem;
   width: 100px; /* o el tamaño que prefieras */
   display: block;
   align-self: flex-start;
   height: 100px; /* Ajusta la altura según sea necesario */
+      border-radius: 50%;
 }
 
 .desktop-menu {
@@ -94,8 +102,8 @@ body {
 .nav-link {
   background: none;
   border: none;
-  color: var(--gray-800);
-  font-size: 0.9rem;
+  color: #fff;
+  font-size: 1.5rem;
   font-weight: 500;
   padding: 0.5rem 0.75rem;
   cursor: pointer;
@@ -103,7 +111,8 @@ body {
 }
 
 .nav-link:hover {
-  color: var(--italian-red);
+  color: #868383;
+
 }
 
 .mobile-menu-toggle {
@@ -113,7 +122,7 @@ body {
 .mobile-btn {
   background: none;
   border: none;
-  color: var(--gray-700);
+  color: #000000;
   cursor: pointer;
   padding: 0.5rem;
 }
@@ -202,8 +211,10 @@ body {
 .hero-subtitle {
   font-family: 'Dancing Script', cursive;
   font-size: 70px;
-  color: var(--italian-gold);
+  color: #000;
   display: block;
+      background-color: rgb(221 221 221 / 50%);
+    border-radius: 50px;
 }
 
 .hero-description {
@@ -267,12 +278,13 @@ body {
   text-align: center;
   margin-bottom: 4rem;
 }
-
+/** aqui cambie el color y tipografia */
 .section-title {
-  font-family: 'Playfair Display', serif;
+     color: #ffffff;
+    font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--italian-gold);
+  
   margin-bottom: 1rem;
 }
 
@@ -286,7 +298,7 @@ body {
 
 /* Menu Section */
 .menu-section {
-  padding: 5rem 0;
+  padding: 6rem 0;
   background: var(--black);
 }
 
@@ -308,7 +320,7 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--italian-green);
+  color: #008c45;
   margin-bottom: 1.5rem;
 }
 
@@ -367,12 +379,13 @@ body {
 
 /* About Section */
 .about-section {
-  padding: 5rem 0;
-   background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+  padding: 6rem 0;
+   background: #000;
+   border-top: #fff solid 3px;
 }
 
 .about-section .section-title {
-  color: var(--white);
+      color: hsl(0, 0%, 100%);
 }
 
 .about-grid {
@@ -380,18 +393,23 @@ body {
   grid-template-columns: 1fr;
   gap: 4rem;
   align-items: center;
+      
 }
 
 .about-main-text {
   font-size: 1.25rem;
   margin-bottom: 1.5rem;
   line-height: 1.6;
+  color: #ffffff;
+    font-family: 'Lato', sans-serif;
+
 }
 
 .brand-highlight {
   font-family: 'Dancing Script', cursive;
-  color: var(--italian-gold);
-  font-size: 2rem;
+  color: #008c45;
+  font-size: 40px;
+    font-weight: bold;
 }
 
 
@@ -435,12 +453,11 @@ body {
   border-radius: 0.75rem;
 }
 
-
-
 /* Contact Section */
 .contact-section {
-  padding: 5rem 0;
+  padding: 6rem 0;
   background: #000;
+  border-top: 3px solid #fff
 }
 
 .contact-info-center {
@@ -480,12 +497,12 @@ body {
 .contact-item-title {
   font-weight: 600;
   font-size: 1.125rem;
-  color: var(--gray-800);
-  margin-bottom: 0.25rem;
+  color: hsl(0deg 0% 100%)
+
 }
 
 .contact-item-text {
-  color: var(--gray-600);
+  color: hsl(0deg 0% 100%);
 }
 
 .social-media {
@@ -495,7 +512,7 @@ body {
 .social-title {
   font-weight: 600;
   font-size: 1.125rem;
-  color: var(--gray-800);
+  color: hsl(0deg 0% 100%);
   margin-bottom: 1rem;
 }
 
@@ -508,7 +525,6 @@ body {
 .social-link {
   width: 3rem;
   height: 3rem;
-  background: var(--italian-red);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -529,6 +545,8 @@ body {
   max-width: 700px;
   margin: 2rem auto;
   padding: 0 1rem;
+      text-align: center;
+          color: #fff;
 }
 
 .wrapper iframe {
@@ -553,7 +571,7 @@ body {
 
 /* Footer */
 .footer {
-      background: hsl(145deg 2.2% 41.91%);
+      background: hsl(0, 0%, 100%);
   color: var(--white);
   padding: 3rem 0;
 }
@@ -567,13 +585,13 @@ body {
 .footer-brand {
   font-family: 'Dancing Script', cursive;
   font-size: 1.875rem;
-  color: var(--italian-gold);
+  color: #000;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
 .footer-description {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
   margin-bottom: 1rem;
 }
 
@@ -583,7 +601,7 @@ body {
 }
 
 .footer-social-link {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
   transition: color 0.3s ease;
   text-decoration: none;
 }
@@ -597,6 +615,7 @@ body {
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  color: #000;
 }
 
 .footer-links {
@@ -622,7 +641,7 @@ body {
 }
 
 .footer-contact {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -642,7 +661,7 @@ body {
 }
 
 .footer-copyright {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 
@@ -650,7 +669,7 @@ body {
 /* Responsive Design */
 @media (min-width: 640px) {
 .nav-content {
-  height: 1px;
+  height: 100px;
 }
 
   .hero-buttons {
@@ -662,7 +681,7 @@ body {
   }
   
   .footer-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
