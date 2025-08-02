@@ -1,6 +1,6 @@
 /* CSS Variables */
 :root {
-  --header-background : 205, 33, 42;
+  --header-background: 205, 33, 42;
   --italian-red: #CD212A;
   --italian-green: hsl(138, 30.6%, 19.6%);
   --italian-gold: hsl(51, 100%, 50%);
@@ -25,7 +25,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
+      
+
 
 body {
   font-family: 'Inter', sans-serif;
@@ -345,6 +348,7 @@ body {
 
 .menu-item-content {
   flex: 1;
+  margin-left: 20px;
 }
 
 .menu-item-name {
@@ -363,7 +367,7 @@ body {
   font-weight: 700;
   color: var(--italian-red);
   font-size: 1.125rem;
-  margin-left: 1rem;
+
 }
 
 .featured-image {
@@ -380,7 +384,10 @@ body {
 /* About Section */
 .about-section {
   padding: 6rem 0;
-   background: #000;
+   background-image: url('img/napoles.jpg');
+   background-repeat: no-repeat;            /* Evita que se repita */
+  background-size: cover;                  /* Ajusta la imagen para cubrir todo */
+  background-position: center center;
    border-top: #fff solid 3px;
 }
 
@@ -393,6 +400,7 @@ body {
   grid-template-columns: 1fr;
   gap: 4rem;
   align-items: center;
+   text-shadow: 1px 1px 5px #000000; /* añade esto para que la letras sobresalen att kevin */ 
       
 }
 
@@ -402,6 +410,9 @@ body {
   line-height: 1.6;
   color: #ffffff;
     font-family: 'Lato', sans-serif;
+    background-color: rgb(0 0 0 / 50%);
+    border-radius: 50px;
+    text-align: center;
 
 }
 

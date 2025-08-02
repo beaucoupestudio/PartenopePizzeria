@@ -2,21 +2,26 @@
 const entrantes = [
     {
         name: "Burrata Mediterránea <br> (veggie)",
+        mini: "img/Burrata Mediterranea.jpeg",
+        full: "img/Burrata Mediterranea-grande.jpeg",
         description: "Una cremosa burrata con rodajas de tomate maduro, pesto aromático de albahaca y aceite de oliva virgen extra.",
         price: "€11.90"
     },
     {
         name: "Ensalada de Mozzarella y Atun ",
+        mini: "img/Burrata Mediterranea.jpeg",
         description: "Ensalada ligera con atún, mozzarella fresca y tomates cherry, sobre una base de rucula y aceite de oliva virgen extra.",
         price: "€8.90"
     },
     {
         name: "Ensalada Caprese con Provola <br> Especialidad (veggie)",
+        mini: "img/Burrata Mediterranea.jpeg",
         description: "Clásica ensalada Caprese, con lonchas de mozzarella fresca ahumada, tomates frescos, hojas de albahaca y de aceite de oliva virgen extra.",
         price: "€9.90"
     },
     {
         name: "Ingredientes extra",
+        mini: "img/napolinato.webp",
         description: "",
         price: "€2.00"
     }
@@ -25,56 +30,76 @@ const entrantes = [
 const pizzasTradicionales = [
     {
         name: "Marinara",
-        description: "Toma’quet, orenga, all,  afla’brega, oli d’oliva verge extra. <br> Tomate, oregano, ajo, albahaca, aceite de oliva virgen extra.",
-        price: "€9.00"
+        mini: "img/Marina.jpeg",
+        full: "img/Marina-grande.jpeg",
+        description: "Tomate, orégano, ajo, albahaca, aceite de oliva virgen extra.",
+        price:
+         "€9.00"
     },
     {
         name: "Margherita",
-        description: "Tomaquet, mozzarella, formatge parmesa’, oli d’oliva verge extra, alfàbrega. <br>Tomate, mozzarella, queso parmesano, aceite de oliva virgen extra, albahaca.",
+         mini: "img/margharita.jpeg",
+        full: "img/margharita-grande.jpeg",
+        description: "Tomate, mozzarella, queso parmesano, aceite de oliva virgen extra y albahaca.",
         price: "€10.00"
-    },
+    },,
     {
         name: "Prosciutto e Funghi",
+        mini: "img/Prosciutto e Funghi.jpeg",
+        full: "img/Prosciutto e Funghi-grande.jpeg",
         description: "Tomaquet, mozzarella, pernil cuit, xampinyons, formatge parmesà, alfàbrega, oli d’oliva verge extra. <br> Tomate, mozzarella, jamon cocido, champinones, queso parmesano, albahaca, aceite de oliva virgen extra.",
         price: "€12.50"
     },
     {
         name: "Diavola",
+        mini: "img/Diavola.jpeg",
+        full: "img/Diavola-grande.jpeg",
         description: "Tomaquet, mozzarella, salami de napoli, bitxo, formatge parmesà, alfàbrega, oli d’oliva verge extra. <br> Tomate, mozzarella, salami de Napoli, guindilla, queso parmesano, albahaca, aceite de oliva virgen extra.",
         price: "€11.50"
     },
     {
         name: "4 Formaggi",
+        mini: "img/4 Formaggi.jpeg",
+        full: "img/4 Formaggi-grande.jpeg",
         description: "Queso ricotta, mozzarella, formatge parmesà, formatge Gorgonzola, alfàbrega, oli d’oliva verge extra. <br>  Ricotta queso, mozzarella queso parmesano, queso Gorgonzola albahaca, aceite de oliva virgen extra.",
         price: "€13.00"
     },
     {
         name: "Capricciosa",
+        mini: "img/Capricciosa.jpeg",
+        full: "img/Capricciosa-grande.jpeg",
         description: "Tomaquet, mozzarella, pernil cuit, xampinyones, salami de Napoli, carxofes, olives negres, formatge parmesà, alfabrega, oli d’oliva verge extra. <br> Tomate, mozzarella, jamón cocido, champiñones, salami de Napoli, alcachofas, aceitunas negras, queso parmesano, albahaca, aceite de oliva virgen extra.",
         price: "€14.00"
     },
     {
         name: "Napoli",
+        mini: "img/Napoli.jpeg",
+        full: "img/Napoli-grande.jpeg",
         description: "Tomaquet, mozzarella, anxoves, olives negres, tàperes, orenga, alfabrega, oli d’oliva verge extra. <br> Tomate, mozzarella, anchoas, aceitunas negras, alcaparras, oregano, albahaca, aceite de oliva virgen extra.",
         price: "€12.50"
     },
     {
         name: "Calzone al Forno",
+        mini: "img/Calzone al forno.jpeg",
+        full: "img/Calzone al forno-grande.jpeg",
         description: "Pizza farcida de: ricotta, provola, tomaquet, salami de Napoli, pebre negre, formatge parmesà, tomaquet, alfabrega, oli d’oliva verge extra. <br> Pizza rellena de: queso ricotta, provola, tomate, salami de Napoli, pimienta negra, queso parmesano, albahaca, aceite de oliva virgen extra.",
         price: "€14.50"
     },
     {
         name: "Filetto",
+         mini: "img/napolinato.webp",
         description: "Mozzarella, tomàquets cherry, formatge parmesà, alfabrega, oli d’oliva verge extra. <br> Mozzarella, tomate cherry, queso parmesano, albahaca, aceite de oliva virgen extra.",
         price: "€11.00"
     },
     {
         name: "Vegetariana <br> (veggie)",
+         mini: "img/napolinato.webp",
         description: "Tomaquet, mozzarella, verdures de temporada. formatge parmesà, alfabrega, oli d’oliva verge extra. <br> Tomate, mozzarella, verdures de temporada, queso parmesano, albahaca, aceite de oliva virgen extra",
         price: "€13.50"
     },
     {
         name: "Provola e Pepe",
+        mini: "img/napolinato.webp",
         description: "Formatge provola, tomaquet, pebre negre, formatge parmesà, alfabrega, oli d’oliva verge extra. <br> Queso provola, tomate, pimienta negra, queso parmesano, albahaca, aceite de oliva virgen extra.",
         price: "€11.50"
     }
@@ -83,59 +108,80 @@ const pizzasTradicionales = [
 const pizzasDeLaCasa = [
     {
         name: "Crudaiola",
+        mini: "img/Crudaiola.jpeg",
+        full: "img/Crudaiola-grande.jpeg",
         description: "Base de pizza, condimentada amb Rucula, Tomàquet Cherry frescos, Pernil Cru de Parma, Escames de Formatge Parmesà, Oli d'Olives Verge Extra. <br> Base de pizza, condimentada con Rucula, Tomate Cherry frescos, Jamón Crudo de Parma, Escamas de Queso Parmesano, Aceite de Olivas Virgen extra.",
         price: "€14.50"
     },
     {
         name: "Maradona",
+        mini: "img/maradona.jpeg",
+        full: "img/maradona-grande.jpeg",
         description: "Mozzarella fiordilatte, Mortadella I.G.P. de Bologna, Burratina fresca, Pesta de Festucs, Festucs picats, Alfàbrega, Oli d'Olives Verge Extra. <br> Mozzarella fiordilatte, Mortadella I.G.P. de Bologna, Burratina fresca, Pesto de Pistachos, Pistachos picados, Albahaca, Aceite de Olivas Virgen Extra.",
         price: "€16.50"
     },
     {
         name: "La Rustica",
+         mini: "img/napolinato.webp",
         description: "Provola (Mozzarella fresca fumada), Botifarra Napolitana, Patates al forn condimentates amb Pebre i Romero, Crema de Formatge Parmesà casolana, Alfàbrega, Oli d'Olives Verge Extra. <br> Provola (Mozzarella fresca ahumada), Butifarra Napolitana, Patates al horno condimentatas con Pimienta y Romero, Crema de Queso Parmesano casera, Albahaca, Aceite de Olivas Virgen Extra.",
         price: "€15.50"
     },
     {
         name: "Don Antonio",
+        mini: "img/don_antonio.jpeg",
+        full: "img/don_antonio-grande.jpeg",
         description: "Mozzarella fiordilatte, Salsa de Tomàquet, Salame napoletà, mató, Olives negres, Alfàbrega, Oli d'Olives Verge Extra. <br> Mozzarella fiordilatte, Salsa de Tomate, Salame napoletano, requesón, Olivas negras, Albahaca, Aceite de Olivas Virgen Extra.",
         price: "€15.00"
     },
     {
         name: "La Piccolina",
+        mini: "img/La Piccolina.jpeg",
+        full: "img/La Piccolina.jpeg",
         description: "Pesto d'Albahaca, Tomàquets sec, Tomàquet Cherry groc, Stracciatella fresca, Oli d'Olives Verge Extra. <br> Pesto de Albahaca, Tomates seco, Tomate Cherry amarillo, Stracciatella fresca, Aceite de Olivas Virgen Extra.",
         price: "€14.50"
     },
     {
         name: "Tonno",
+        mini: "img/tonno.jpeg",
+        full: "img/tonno-grande.jpg",
         description: "Mozzarrella fiordilatte, Tomàquet, Tonyina, Ceba morada, Alfàbrega, Oli d'Olives Verge Extra. <br> Mozzarrella fiordilatte, Tomate, Atún, Cebolla morada, Albahaca, Aceite de Olivas Virgen Extra.",
         price: "€14.50"
+
     }
 ]
 
 const pizzasEspeciales = [
     {
         name: "Guanciale",
+        mini: "img/guanciale.jpeg",
+        full: "img/guanciale-grande.jpeg",
         description: "Mozzarella fiordilatte, guanciale curat italià, tomàquet Cherry groc, Stracciatella fresca, Alfàbrega, Oli d'Olives Verge Extra. <br> Mozzarella fiordilatte, guanciale curado italiano, tomate Cherry amarillo, Stracciatella fresca, Albahaca, Aceite de Olivas Virgen Extra.",
         price: "€17.50"
     },
     {
         name: "Cami Ral 510",
+        mini: "img/napolinato.webp",
+
         description: "Mozzarella, salame napoletà, formatge gorgonzola dop, pebre, Alfàbrega, Oli d'Olives Verge Extra. <br> Mozzarella, salame napoletano, queso gorgonzola dop, pimienta, Albahaca, Aceite de Olivas Virgen Extra.",
         price: "€16.00"
     },
     {
         name: "Stella del Sud",
+        mini: "img/Stella del Sud.jpeg",
+        full: "img/Stella del Sud-grande.jpeg",
         description: "Tomàquet, Anchoves, Stracciatella fresca, Tomàquet Cherry groc, pell de llimona ratllada, Alfàbrega, Oli d'Olives Verge Extra. <br> Pomodoro, Anchoas, Stracciatella fresca, Tomate cherry amarillo, piel de limon rallada, Albahaca, Aceite de Olivas Virgen Extra.",
         price: "€19.00"
     },
     {
         name: "La Zia",
+        mini: "img/La Zia.jpeg",
+        full: "img/La Zia-grande.jpeg",
         description: "Mozzarella, Tomàquet cherry vermell i groc, guanciale curat italià, nuca, alfàbrega, formatge parmesà, oli d'oliva verge extra. <br> Mozzarella, Tomate cherry rojo y amarillo, guanciale curado italiano, nduja, albahaca, queso parmesano, aceite de oliva virgen extra.",
         price: "€16.50"
     },
     {
         name: "Trufada",
+         mini: "img/napolinato.webp",
         description: "Mozzarella fresca, xampinons, botifarra, crema de tòfona negra, formatge parmesà, oli d'oliva verge extra. <br> Mozzarella fresca, champinones, butifarra, crema de trufa negra, queso parmesano, aceite de oliva virgen extra.",
         price: "€15.00"
     }    
@@ -167,51 +213,61 @@ const postres = [
 const bebidas = [
     {
         name: "Agua",
+        mini: "img/agua.jpg",
         description: "",
         price: "€2.00"
     },
     {
         name: "Agua con Gas",
+        mini: "img/agua.jpg",
         description: "",
         price: "€2.50"
     },
     {
         name: "Coca Cola",
+        mini: "img/cocacola.jpeg",
         description: "",
         price: "€2.50"
     },
     {
         name: "Coca Cola Zero",
+         mini: "img/cocacola.zeroo.jpg",
         description: "",
         price: "€2.50"
     },
     {
         name: "Fanta Naranja",
+        mini: "img/fanta.jpg",
         description: "",
         price: "€2.50"
     },
     {
         name: "Fanta Limón",
+        mini: "img/fanta-limon.jpg",
         description: "",
         price: "€2.50"
     },
     {
         name: "Nestea",
+        mini: "img/nestea.jpg",
         description: "",
         price: "€2.50"
     },
     {
         name: "Aquarius",
+        mini: "img/Aquarius.jpg",
         description: "",
         price: "€2.50"
     },
     {
         name: "Seven Up",
+        mini: "img/seven.png",
         description: "",
         price: "€2.50"
     },
     {
         name: "Zumos",
+        mini: "img/zumo.avif",
         description: "",
         price: "€2.20"
     }
@@ -424,11 +480,15 @@ function createMenuItem(pizza) {
     item.className = 'menu-item';
     
     item.innerHTML = `
+        <div class="menu-item-image">
+            <a href="${pizza.full}" target="_blank"><img src="${pizza.mini}" alt="${pizza.name}"></a>
+        </div>
         <div class="menu-item-content">
             <h4 class="menu-item-name">${pizza.name}</h4>
             <p class="menu-item-description">${pizza.description}</p>
+            <span class="menu-item-price">${pizza.price}</span>
         </div>
-        <span class="menu-item-price">${pizza.price}</span>
+        
     `;
     
     return item;
@@ -436,16 +496,14 @@ function createMenuItem(pizza) {
 
 
 
+
 // Smooth scrolling for navigation
 window.addEventListener('scroll', function() {
-    const navigation = document.getElementById('navigation');
-    if (window.scrollY > 100) {
-        navigation.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
-        navigation.style.backdropFilter = 'blur(10px)';
-    } else {
-        navigation.style.backgroundColor = 'var(--white)';
-        navigation.style.backdropFilter = 'none';
-    }
+    const navigation = document.querySelector('.nav-container');
+
+    var alpha = Math.min((window.scrollY / 100), 1.0);
+    navigation.style.backgroundColor = `rgba(var(--header-background), ${alpha})`;
+
 });
 
 // Handle window resize for mobile menu
@@ -455,6 +513,13 @@ window.addEventListener('resize', function() {
     }
 });
 
+window.addEventListener('resize', function() {
+    if (window.innerWidth >= 768 && isMobileMenuOpen) {
+        toggleMobileMenu();
+    }
+});
+
+/*
 // Close mobile menu when clicking outside
 document.addEventListener('click', function(event) {
     const mobileMenu = document.getElementById('mobile-menu');
@@ -465,7 +530,7 @@ document.addEventListener('click', function(event) {
         !menuToggle.contains(event.target)) {
         toggleMobileMenu();
     }
-});
+}); */
 
 // Intersection Observer for animations (optional enhancement)
 function initializeScrollAnimations() {
