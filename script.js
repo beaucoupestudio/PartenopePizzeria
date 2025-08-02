@@ -115,8 +115,8 @@ const pizzasDeLaCasa = [
     },
     {
         name: "Maradona",
-        mini: "img/maradona.jpeg",
-        full: "img/maradona-grande.jpeg",
+        mini: "img/Maradona.jpeg",
+        full: "img/Maradona-grande.jpeg",
         description: "Mozzarella fiordilatte, Mortadella I.G.P. de Bologna, Burratina fresca, Pesta de Festucs, Festucs picats, Alfàbrega, Oli d'Olives Verge Extra. <br> Mozzarella fiordilatte, Mortadella I.G.P. de Bologna, Burratina fresca, Pesto de Pistachos, Pistachos picados, Albahaca, Aceite de Olivas Virgen Extra.",
         price: "€16.50"
     },
