@@ -734,6 +734,8 @@ body {
   .hero-title {
     font-size: 2.5rem;
   }
+   .menu-card { 
+    width: 400px;}
 
   .menu-item {
     flex-direction: column;
@@ -757,3 +759,4 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
