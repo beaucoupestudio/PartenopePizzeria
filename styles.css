@@ -734,7 +734,15 @@ body {
   .hero-title {
     font-size: 2.5rem;
   }
-  
+
+  .menu-item {
+    flex-direction: column;
+        align-items: center;
+  }
+  .menu-item-name{
+    text-align: center;
+  }
+
   .hero-description {
     font-size: 1.125rem;
   }
