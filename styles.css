@@ -734,13 +734,7 @@ body {
   .hero-title {
     font-size: 2.5rem;
   }
-   .menu-card { 
-    width: 400px;}
 
-  .menu-item {
-    flex-direction: column;
-        align-items: center;
-  }
   .menu-item-name{
     text-align: center;
   }
@@ -759,4 +753,5 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 
