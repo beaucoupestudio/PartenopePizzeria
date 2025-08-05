@@ -9,13 +9,15 @@ const entrantes = [
     },
     {
         name: "Ensalada de Mozzarella y Atun ",
-        mini: "img/Burrata Mediterranea.jpeg",
+        mini: "img/mozzarellayatún.jpeg",
+        full: "img/mozzarellayatún-grande.jpeg",
         description: "Ensalada ligera con atún, mozzarella fresca y tomates cherry, sobre una base de rucula y aceite de oliva virgen extra.",
         price: "€8.90"
     },
     {
         name: "Ensalada Caprese con Provola <br> Especialidad (veggie)",
-        mini: "img/Burrata Mediterranea.jpeg",
+        mini: "img/ensaladacapresa.jpeg",
+        full: "img/ensaladacapresa-grande.jpeg",
         description: "Clásica ensalada Caprese, con lonchas de mozzarella fresca ahumada, tomates frescos, hojas de albahaca y de aceite de oliva virgen extra.",
         price: "€9.90"
     },
@@ -87,13 +89,15 @@ const pizzasTradicionales = [
     },
     {
         name: "Filetto",
-         mini: "img/napolinato.webp",
+          mini: "img/filetto.jpeg",
+         full: "img/filetto-grande.jpeg",
         description: "Mozzarella, tomàquets cherry, formatge parmesà, alfabrega, oli d’oliva verge extra. <br> Mozzarella, tomate cherry, queso parmesano, albahaca, aceite de oliva virgen extra.",
         price: "€11.00"
     },
     {
         name: "Vegetariana <br> (veggie)",
-         mini: "img/napolinato.webp",
+         mini: "img/Vegetariana.jpeg",
+         full: "img/Vegetariana-grande.jpeg",
         description: "Tomaquet, mozzarella, verdures de temporada. formatge parmesà, alfabrega, oli d’oliva verge extra. <br> Tomate, mozzarella, verdures de temporada, queso parmesano, albahaca, aceite de oliva virgen extra",
         price: "€13.50"
     },
@@ -122,7 +126,8 @@ const pizzasDeLaCasa = [
     },
     {
         name: "La Rustica",
-         mini: "img/napolinato.webp",
+         mini: "img/rustica.jpeg",
+         full: "img/rustica-grande.jpeg",
         description: "Provola (Mozzarella fresca fumada), Botifarra Napolitana, Patates al forn condimentates amb Pebre i Romero, Crema de Formatge Parmesà casolana, Alfàbrega, Oli d'Olives Verge Extra. <br> Provola (Mozzarella fresca ahumada), Butifarra Napolitana, Patates al horno condimentatas con Pimienta y Romero, Crema de Queso Parmesano casera, Albahaca, Aceite de Olivas Virgen Extra.",
         price: "€15.50"
     },
@@ -160,7 +165,8 @@ const pizzasEspeciales = [
     },
     {
         name: "Cami Ral 510",
-        mini: "img/napolinato.webp",
+        mini: "img/La Cami Ral.jpeg",
+        full: "img/La cami Ral-grande.jpeg",
 
         description: "Mozzarella, salame napoletà, formatge gorgonzola dop, pebre, Alfàbrega, Oli d'Olives Verge Extra. <br> Mozzarella, salame napoletano, queso gorgonzola dop, pimienta, Albahaca, Aceite de Olivas Virgen Extra.",
         price: "€16.00"
@@ -181,30 +187,47 @@ const pizzasEspeciales = [
     },
     {
         name: "Trufada",
-         mini: "img/napolinato.webp",
+         mini: "img/trufada.jpeg",
+         full: "img/trufada-grande.jpeg",
         description: "Mozzarella fresca, xampinons, botifarra, crema de tòfona negra, formatge parmesà, oli d'oliva verge extra. <br> Mozzarella fresca, champinones, butifarra, crema de trufa negra, queso parmesano, aceite de oliva virgen extra.",
         price: "€15.00"
-    }    
+    },  
+     {
+        name: "Prosciutto",
+         mini: "img/Prosciutto.jpeg",
+         full: "img/Prosciutto-grande.jpeg",
+        description: "Tomate, mozzarella, jamon cocido,  queso parmesano, albahaca, aceite de oliva virgen extra..",
+        price: "€11,50"
+    }
+
 ];
 
 const postres = [
     {
         name: "Tiramisú Classic - Clásico",
+        mini: "img/tiramisut.jpeg",
+        full: "img/tiramisut-grande.jpeg",
         description: "",
         price: "€6.00"
     },
     {
         name: "Tiramisú de Festuc - Pistacho",
+        mini: "img/tiramisup.jpeg",
+        full: "img/tiramisup-grande.jpeg",
         description: "",
         price: "€6.00"
     },
     {
         name: "Torta Caprese (cacao, almendras)<br> Tarta Caprese (Cacau, Ametlles)",
+        mini: "img/capresa.jpeg",
+        full: "img/capresa-grande.jpeg",
         description: "(Cacao, almendras)",
         price: "€5.00"
     },
     {
         name: "Delicia de Limón - Delicia de LLimona",
+        mini: "img/limone.jpeg",
+        full: "img/limone-grande.jpeg",
         description: "",
         price: "€5.00"
     }
@@ -213,13 +236,13 @@ const postres = [
 const bebidas = [
     {
         name: "Agua",
-        mini: "img/agua.jpg",
+        mini: "img/agua.jpeg",
         description: "",
         price: "€2.00"
     },
     {
         name: "Agua con Gas",
-        mini: "img/agua.jpg",
+        mini: "img/agua.jpeg",
         description: "",
         price: "€2.50"
     },
@@ -231,43 +254,43 @@ const bebidas = [
     },
     {
         name: "Coca Cola Zero",
-         mini: "img/cocacola.zeroo.jpg",
+         mini: "img/cocacola zero.jpeg",
         description: "",
         price: "€2.50"
     },
     {
         name: "Fanta Naranja",
-        mini: "img/fanta.jpg",
+        mini: "img/fanta.jpeg",
         description: "",
         price: "€2.50"
     },
     {
         name: "Fanta Limón",
-        mini: "img/fanta-limon.jpg",
+        mini: "img/fanta_limon.jpeg",
         description: "",
         price: "€2.50"
     },
     {
         name: "Nestea",
-        mini: "img/nestea.jpg",
+        mini: "img/nestea.jpeg",
         description: "",
         price: "€2.50"
     },
     {
         name: "Aquarius",
-        mini: "img/Aquarius.jpg",
+        mini: "img/aquarius.jpeg",
         description: "",
         price: "€2.50"
     },
     {
         name: "Seven Up",
-        mini: "img/seven.png",
+        mini: "img/seven.jpeg",
         description: "",
         price: "€2.50"
     },
     {
         name: "Zumos",
-        mini: "img/zumo.avif",
+        mini: "img/zumo.jpeg",
         description: "",
         price: "€2.20"
     }
@@ -276,21 +299,29 @@ const bebidas = [
 const vinos = [
     {
         name: "Roca Xica Blanco",
+        mini: "img/blanco.jpeg",
+        full: "img/blanco-grande.jpeg",
         description: "",
         price: "€3.50 / €15.00"
     },
     {
         name: "Roca Xica Tinto",
+        mini: "img/tinto.jpeg",
+        full: "img/tinto-grande.jpeg",
         description: "",
         price: "€3.50 / €15.00"
     },
     {
         name: "Roca Xica Rosado",
+        mini: "img/rosado.jpeg",
+        full: "img/rosado-grande.jpeg",
         description: "",
         price: "€3.50 / €15.00"
     },
     {
         name: "Gran Amat Cava Brut Nature",
+        mini: "img/amat.jpeg",
+        full: "img/amat-grande.jpeg",
         description: "",
         price: "€4.00 / €15.00"
     }
@@ -300,26 +331,31 @@ const cafe = [
     {
         name: "Café",
         description: "",
+        mini: "img/cafe.jpeg",
         price: "€1.30"
     },
     {
         name: "Cortado",
         description: "",
+         mini: "img/cortado.jpeg",
         price: "€1.50"
     },
     {
         name: "Capuccino",
         description: "",
+         mini: "img/cappuccino.jpeg",
         price: "€2.00"
     },
     {
         name: "Americano",
         description: "",
+         mini: "img/americano.jpeg",
         price: "€2.00"
     },
     {
         name: "Carajillo",
         description: "",
+         mini: "img/carajillo.jpeg",
         price: "€2.00"
     }
 ]
@@ -328,30 +364,40 @@ const cervezas = [
     {
         name: "Alhambra 1925 de Barril",
         description: "",
+        mini: "img/1925.jpeg",
+        full: "img/1925-grande.jpeg",
         price: "€3.00 / €5.00"
     },
     {
         name: "Nastro Azurro Botella",
+        mini: "img/nastro.jpeg",
+        full: "img/nastro-grande.jpeg",
         description: "",
         price: "€3.20"
     },
     {
         name: "Alhambra Especial",
+        mini: "img/alambraa.jpeg",
+        full: "img/alambraa-grande.jpeg",
         description: "",
         price: "€2.90"
     },
     {
         name: "Alhambra Padler",
+        mini: "img/alambra.jpeg",
+        full: "img/alambra-grande",
         description: "",
         price: "€2.90"
     },
     {
         name: "Mahou 0.0",
+        mini:"img/mahou.jpeg",
         description: "",
         price: "€2.90"
     },
     {
         name: "Mahou 0.0 Tostada",
+        mini: "img/mahouu.jpeg",
         description: "",
         price: "€2.90"
     }
