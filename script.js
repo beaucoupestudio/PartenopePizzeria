@@ -89,15 +89,15 @@ const pizzasTradicionales = [
     },
     {
         name: "Filetto",
-          mini: "img/filetto.jpeg",
-         full: "img/filetto-grande.jpeg",
+        mini: "img/Filetto.jpeg",
+        full: "img/Filetto-grande.jpeg",
         description: "Mozzarella, tomàquets cherry, formatge parmesà, alfabrega, oli d’oliva verge extra. <br> Mozzarella, tomate cherry, queso parmesano, albahaca, aceite de oliva virgen extra.",
         price: "11.00€"
     },
     {
         name: "Vegetariana <br> (veggie)",
-         mini: "img/Vegetariana.jpeg",
-         full: "img/Vegetariana-grande.jpeg",
+         mini: "img/vegetariana.jpeg",
+         full: "img/vegetariana-grande.jpeg",
         description: "Tomaquet, mozzarella, verdures de temporada. formatge parmesà, alfabrega, oli d’oliva verge extra. <br> Tomate, mozzarella, verdures de temporada, queso parmesano, albahaca, aceite de oliva virgen extra",
         price: "13.50€"
     },
@@ -187,15 +187,15 @@ const pizzasEspeciales = [
     },
     {
         name: "Trufada",
-         mini: "img/trufada.jpeg",
-         full: "img/trufada-grande.jpeg",
+         mini: "img/Trufada.jpeg",
+         full: "img/Trufada-grande.jpeg",
         description: "Mozzarella fresca, xampinons, botifarra, crema de tòfona negra, formatge parmesà, oli d'oliva verge extra. <br> Mozzarella fresca, champinones, butifarra, crema de trufa negra, queso parmesano, aceite de oliva virgen extra.",
         price: "15.00€"
     },  
      {
         name: "Prosciutto",
-         mini: "img/Prosciutto.jpeg",
-         full: "img/Prosciutto-grande.jpeg",
+         mini: "img/prosciutto.jpeg",
+         full: "img/prosciutto-grande.jpeg",
         description: "Tomate, mozzarella, jamon cocido,  queso parmesano, albahaca, aceite de oliva virgen extra..",
         price: "11,50€"
     }
@@ -370,8 +370,8 @@ const cervezas = [
     },
     {
         name: "Nastro Azurro Botella",
-        mini: "img/nastro.jpeg",
-        full: "img/nastro-grande.jpeg",
+        mini: "img/Nastro.jpeg",
+        full: "img/Nastro-grande.jpeg",
         description: "",
         price: "3.20€"
     },
@@ -652,6 +652,7 @@ window.onload = function() {
     changeLanguage(userLang);
   }
 };*/
+
 
 
 
