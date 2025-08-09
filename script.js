@@ -236,7 +236,7 @@ const postres = [
 const bebidas = [
     {
         name: "Agua",
-        mini: "img/agua.jpeg",
+        mini: "img/agua.jpg",
         description: "",
         price: "2.00€"
     },
@@ -652,6 +652,7 @@ window.onload = function() {
     changeLanguage(userLang);
   }
 };*/
+
 
 
 
